@@ -1,0 +1,39 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo / React Native
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.expo
+*.apk
+*.aab
+*.ipa
+
+# TypeScript
+*.tsbuildinfo
+
+# Build outputs
+app/.expo/
+app/.expo-shared/
+app/node_modules/
+app/dist/
+server/node_modules/
+server/dist/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
