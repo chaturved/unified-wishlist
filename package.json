@@ -1,0 +1,15 @@
+{
+  "name": "unified-wishlist",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "verify": "npm run verify:server && npm run verify:app",
+    "verify:server": "cd server && npm run typecheck && npm run lint && npm run test",
+    "verify:app": "cd app && npm run typecheck && npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

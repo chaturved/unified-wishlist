@@ -1,11 +1,13 @@
 import express from "express";
+import { validateUrl } from "./middleware/validateUrl";
+import { previewRateLimiter } from "./middleware/rateLimit";
+import previewRouter from "./routes/preview";
 
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Server is running!");
-});
+app.use("/preview", validateUrl, previewRateLimiter, previewRouter);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+app.get("/", (req, res) => res.send("Server is running!"));
+
+export default app;

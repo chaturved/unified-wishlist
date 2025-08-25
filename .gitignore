@@ -14,6 +14,9 @@ web-build/
 *.aab
 *.ipa
 
+# Environment files
+app/.env
+
 # TypeScript
 *.tsbuildinfo
 
@@ -24,6 +27,10 @@ app/node_modules/
 app/dist/
 server/node_modules/
 server/dist/
+
+# Expo prebuild native folders
+app/ios/
+app/android/
 
 # Logs
 logs/

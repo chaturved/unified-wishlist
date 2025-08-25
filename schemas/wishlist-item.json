@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WishlistItem",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "image": { "type": "string", "format": "uri" },
+    "price": { "type": "string", "description": "Price or 'N/A'" },
+    "currency": { "type": "string", "maxLength": 3 },
+    "source": { "type": "string", "description": "Domain name, e.g. amazon.com" },
+    "url": { "type": "string", "format": "uri" },
+    "normalizedUrl": { "type": "string", "format": "uri" },
+    "createdAt": { "type": "string", "format": "date-time" }
+  },
+  "required": ["title", "url", "normalizedUrl"],
+  "additionalProperties": false
+}

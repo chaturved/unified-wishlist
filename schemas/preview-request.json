@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PreviewRequest",
+  "type": "object",
+  "properties": {
+    "url": { "type": "string", "format": "uri" },
+    "raw_html": { "type": "string" }
+  },
+  "required": ["url"],
+  "additionalProperties": false
+}
